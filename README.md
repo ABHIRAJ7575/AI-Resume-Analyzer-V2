@@ -31,7 +31,7 @@
 
 <div align="center">
 
-### **[LIVE APP - INSERT URL HERE](YOUR_LIVE_URL_HERE)**
+### **[LIVE APP](https://ai-resume-analyzer-v2-gamma.vercel.app/)**
 
 > 📌 *Live URL will be inserted here. Coming soon - significantly faster than IRCTC loading during Tatkal booking window. Probably.*
 
