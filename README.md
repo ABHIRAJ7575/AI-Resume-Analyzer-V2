@@ -24,18 +24,37 @@
 </div>
 
 ---
-
-##  Check It Live - Right Now
-
-> *"Because a GitHub repo without a live link is like a resume with 'Available Upon Request' - theoretically useful, practically invisible to every recruiter on the planet."*
+  
+## Check It Live
 
 <div align="center">
+  
+<br />
 
-### **[LIVE APP](https://ai-resume-analyzer-v2-gamma.vercel.app/)**
+<a href="https://ai-resume-analyzer-v2-gamma.vercel.app/" target="_blank">
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=24&height=90&text=⬡%20TALENTGRAPH%20·%20AI&fontSize=32&fontColor=ffffff&desc=↗%20Launch%20Live%20Application&descSize=16&fontAlignY=42&descAlignY=68&animation=fadeIn" width="480" alt="Launch TalentGraph AI" />
+</a>
 
-> 📌 *Live URL will be inserted here. Coming soon - significantly faster than IRCTC loading during Tatkal booking window. Probably.*
+<br /><br />
+ 
+🟢 &nbsp;**Live on Vercel** &nbsp;·&nbsp; Powered by Gemini 2.5 Flash &nbsp;·&nbsp; Zero Downtime
+ 
+<br /><br />
+ 
+<a href="https://ai-resume-analyzer-v2-gamma.vercel.app/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=vercel" width="46" height="46" title="Open Live App" />
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/ABHIRAJ7575/AI-Resume-Analyzer-V2" target="_blank">
+  <img src="https://skillicons.dev/icons?i=github" width="46" height="46" title="View Source Code" />
+</a>
 
+<br /><br />
+ 
+*"Deployed. Loads instantly. Currently judging resumes 24/7 - more reliable than a placement portal on the last day before registration deadline."*
+ 
 </div>
+
 
 ---
 
