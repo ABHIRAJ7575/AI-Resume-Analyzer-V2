@@ -1,0 +1,16 @@
+name: Supabase Database Keep-Alive
+
+on:
+  schedule:
+    # ⏰ Runs at 00:00 UTC every 5 days to reset the Supabase 7-day inactivity clock
+    - cron: '0 0 */5 * *'
+  workflow_dispatch: # Allows you to manually trigger it from GitHub if you ever want to test it
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Keep-Alive Ping to Supabase Rest API
+        run: |
+          curl -i -X GET "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}/rest/v1/" \
+          -H "apikey: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}"

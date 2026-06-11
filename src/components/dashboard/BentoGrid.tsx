@@ -96,7 +96,7 @@ export function BentoDashboard({ analysis, className = '' }: BentoDashboardProps
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
-    <div className={`flex w-full h-[calc(100vh-4rem)] overflow-hidden bg-background rounded-2xl border border-white/10 ${className}`}>
+    <div className={`flex flex-col lg:flex-row gap-6 w-full max-w-7xl mx-auto p-4 ${className || ''}`}>
       {/* ── Rotating conic gradient background accent ─────────────────── */}
       <div
         aria-hidden="true"
@@ -108,8 +108,8 @@ export function BentoDashboard({ analysis, className = '' }: BentoDashboardProps
         />
       </div>
 
-      {/* Left Panel: ATS Metrics (STILL / FIXED) */}
-      <aside className="w-[380px] h-full overflow-y-auto border-r border-white/10 p-6 scrollbar-none shrink-0 space-y-6">
+      {/* LEFT PANEL: Score & Keywords Wheel */}
+      <div className="w-full lg:w-1/3 space-y-6">
         <BentoCard aria-label="Score overview" className="flex flex-col items-center gap-4">
           <LazyMagneticWrapper strength={0.2}>
             <LazyScoreRadial score={score.totalScore} size={180} />
@@ -137,7 +137,7 @@ export function BentoDashboard({ analysis, className = '' }: BentoDashboardProps
                 </span>
               </p>
             </div>
-            
+
             <GuardrailMetricRow
               label="Credibility Index"
               score={98}
@@ -153,11 +153,11 @@ export function BentoDashboard({ analysis, className = '' }: BentoDashboardProps
             />
           </div>
         </BentoCard>
-      </aside>
+      </div>
 
-      {/* Right Panel: Content Section (INDEPENDENT SCROLL) */}
-      <main className="flex-1 h-full overflow-y-auto p-6 space-y-8 custom-scrollbar">
-        
+      {/* RIGHT PANEL: Suggested Improvements (Wiped clean of 'hidden' tags) */}
+      <div className="w-full lg:w-2/3 space-y-8">
+
         {/* 1. Suggested Improvements Container Layer */}
         <section className="space-y-4">
           <h3 className="text-sm font-semibold tracking-wider text-slate-400 uppercase">Suggested Improvements</h3>
@@ -171,7 +171,7 @@ export function BentoDashboard({ analysis, className = '' }: BentoDashboardProps
         {/* 2. Parsed Resume Transcript Accordion Box */}
         <section className="border border-white/10 rounded-xl bg-neutral-950/40 backdrop-blur-3xl overflow-hidden">
           <details className="group" open={!isCollapsed}>
-            <summary 
+            <summary
               className="flex items-center justify-between p-4 cursor-pointer hover:bg-neutral-900/40 transition-colors"
               onClick={(e) => { e.preventDefault(); setIsCollapsed(!isCollapsed); }}
             >
@@ -199,7 +199,7 @@ export function BentoDashboard({ analysis, className = '' }: BentoDashboardProps
           />
         </section>
 
-      </main>
+      </div>
     </div>
   );
 }
